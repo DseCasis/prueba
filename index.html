@@ -53,8 +53,11 @@
       <div class="card-body">
         <div class="mb-3">
           <label for="carrerStudent" class="form-label">Carrera:</label>
-          <input type="text" name="carrerStudent" id="carrerStudent" class="form-control"
-            placeholder="Ingrese su carrera aqui" aria-describedby="helpId">
+          <select name="carreras" id="carreras">
+            <option value="Marketing">Marketing</option>
+            <option value="diseñoDeModas">Diseño De Modas</option>
+            <option value="desarolloDeSoftware">Desarrollo De Software</option>
+          </select>
         </div>
       </div>
       <div class="card-body">
@@ -65,13 +68,91 @@
         </div>
       </div>
     </div>
+    <footer>
+      <button class="btn btn-primary" onclick="addStudent()">Agregar</button>
+    </footer>
     <script>let exports = {}; </script>
     <script src="/prueba/dist/Maint.js"></script>
 
+    <br>
+
+    <div class="card">
+      <div class="card-header">
+        <h2>FORMULARIO DE REGISTRO PARA DOCENTES</h2>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="nameTeacher" class="form-label">Nombre:</label>
+          <input type="text" name="nameTeacher" id="nameTeacher" class="form-control" placeholder="Ingrese su nombre aqui"
+            aria-describedby="helpId">
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="identificationTeacher" class="form-label">Identificación:</label>
+          <input type="text" name="identificationTeacher" id="identificationTeacher" class="form-control"
+            placeholder="Ingrese su identificación aqui" aria-describedby="helpId">
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="adressTeacher" class="form-label">Direccion:</label>
+          <input type="text" name="adressTeacher" id="adressTeacher" class="form-control"
+            placeholder="Ingrese su direccion aqui" aria-describedby="helpId">
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="tittleTeacher" class="form-label">Titulo</label>
+          <input type="text" name="tittleTeacher" id="tittleTeacher" class="form-control"
+            placeholder="Ingrese su direccion aqui" aria-describedby="helpId">
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="carrerTeacher" class="form-label">Carrera:</label>
+          <input type="text" name="carrerTeacher" id="carrerTeacher" class="form-control"
+            placeholder="Ingrese su carrera aqui" aria-describedby="helpId">
+        </div>
+      </div>
+      <div class="card-body">
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="signatureTeacher" class="form-label">Asignatura:</label>
+          <input type="text" name="signatureTeacher" id="signatureTeacher" class="form-control"
+            placeholder="Ingrese su direccion aqui" aria-describedby="helpId">
+        </div>
+      </div>
+      <footer>
+        <button class="btn btn-primary" onclick="addTeacher()">Agregar</button>
+      </footer>
+    </div>
+     <br>
+    <div class="card">
+      <div class="card-header">
+        <h2>FORMULARIO DE REGISTRO DE CURSOS ASIGNADOS</h2>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="courseCarrer" class="form-label">Carrera:</label>
+          <input type="text" name="courseCarrer" id="courseCarrer" class="form-control" placeholder="Ingrese su nombre aqui"
+            aria-describedby="helpId">
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="courseSignature" class="form-label">Asignatura:</label>
+          <input type="text" name="courseSignature" id="courseSignature" class="form-control"
+            placeholder="Ingrese su identificación aqui" aria-describedby="helpId">
+        </div>
+      
+    <footer>
+      <button class="btn btn-primary" onclick="addCourse()">Agregar</button>
+    </footer>
 
   </main>
   <footer>
-    <button class="btn btn-primary" onclick="addStudent()">Agregar</button>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
